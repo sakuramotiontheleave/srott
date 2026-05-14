@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>パチスロ</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<h1>🎰 PACHISLOT 🎰</h1>
+<h2 id="credit">
+  CREDIT : 100
+</h2>
+<img
+id="chanceImage"
+src="images/atumori.png">
+
+<h2 id="chance"></h2>
+<h2 id="push"></h2>
+
+<div class="slot-machine">
+
+  <div class="window">
+    <div class="reel" id="reel1"></div>
+  </div>
+
+  <div class="window">
+    <div class="reel" id="reel2"></div>
+  </div>
+
+  <div class="window">
+    <div class="reel" id="reel3"></div>
+  </div>
+
+</div>
+
+<div class="buttons">
+
+  <button onclick="stopReel(0)">
+    左停止
+  </button>
+
+  <button onclick="stopReel(1)">
+    中停止
+  </button>
+
+  <button onclick="stopReel(2)">
+    右停止
+  </button>
+
+</div>
+
+<button class="start-button"
+onclick="startSlot()">
+
+  スタート
+
+</button>
+
+<h2 id="result"></h2>
+<img
+id="cutin"
+src="images/bw2.png">
+<script src="script.js"></script>
+
+<audio
+id="stopSound"
+src="sounds/stop.mp3">
+</audio>
+
+</body>
+</html>
