@@ -71,7 +71,7 @@ let bonusFlag = false;
 
 let effectMode = 0;
 
-let credit = 9999;
+let credit = 100;
 
 creditText.textContent =
   "CREDIT : " + credit;
@@ -172,7 +172,7 @@ function startSlot(){
   const random =
     Math.random();
 
-  bonusFlag = random < 0.03;
+  bonusFlag = random < 0.125;
 
   if(bonusFlag){
     cutin.style.display =
